@@ -2,6 +2,13 @@ from flask import Flask, request
 from datetime import date
 import json
 
+#TODO
+def convert_unit(value, unit):
+	new_value = value
+	new_unit = unit
+	return [value, unit]
+
+
 def process_json(input_dict):
 	json_list = []
 	for i in range(len(input_dict['entry'])):
